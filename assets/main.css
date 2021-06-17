@@ -1,0 +1,328 @@
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    background-color: #001122;
+    color: white;
+    margin: 0;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.header{
+    opacity: 1;
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10em 0 7.5em 0;
+    animation: fadeIn 1.25s ease-out forwards;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+        transform: translate(0px, 30px);
+	}
+	100% {
+		opacity: 1;
+        transform: translate(0px, 0px);
+	}
+}
+
+.title{
+    margin-left: 10%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title strong{
+    font-size: 60px;
+}
+
+.titleName{
+    margin-bottom: 0.25em;
+}
+
+.subtitle{
+    font-size: 0.75em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.titleButtonContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1em;
+    width: 100%;
+}
+
+button{
+    font-family: 'Roboto', sans-serif;
+    padding: 0.5em 1em;
+    border: 0.15em solid #af7efa;
+    background: rgba(0,0,0,0);
+    color: #af7efa;
+    text-align: center;
+    text-decoration: none;
+    /* font-weight: 800; */
+}
+
+button:last-of-type{
+    border-radius: 5%;
+    border: 0.1em solid #af7efa;
+}
+
+button:hover{
+    background-color: rgba(113, 93, 242, 0.15);
+    cursor: pointer;
+}
+
+.titleButton{
+    font-family: 'Roboto', sans-serif;
+    width: 35%;
+    padding: 0.5em 1em;
+    border: 0.15em solid #af7efa;
+    background: rgba(0,0,0,0);
+    color: #af7efa;
+    text-align: center;
+    text-decoration: none;
+    /* font-weight: 800; */
+    font-size: 18;
+}
+
+.titleButton:hover{
+    background-color: rgba(113, 93, 242, 0.15);
+    cursor: pointer;
+}
+
+.button2{
+    display:inline-block;
+    padding:0.5em 3em;
+    border:0.16em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family:'Roboto',sans-serif;
+    font-weight:400;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.15s;
+}
+.button2:hover{
+    color:#DDDDDD;
+    border-color:#DDDDDD;
+}
+.button2:active{
+    color:#BBBBBB;
+    border-color:#BBBBBB;
+}
+
+.blobs{
+    position: relative;
+}
+
+.blob1{
+    position: absolute;
+    top: -12em;
+    left: 2em;
+    z-index: 3;
+}
+
+.blob2{
+    position: absolute;
+    top: -9em;
+    left: 1em;
+    z-index: 2;
+}
+
+.blob3{
+    position: absolute;
+    top: -9em;
+    left: 3em;
+}
+
+.dividerParent{
+    height: 25em;
+    width: 100%;
+    /* padding-top: 25em; */
+    position: relative;
+    overflow: hidden;
+}
+
+.divider{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.dividerAbout{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    user-select: none;
+    pointer-events: none;
+}
+
+.about::before{
+    opacity: 0;
+}
+
+.about{
+    /* height: 15em; */
+    width: 100%;
+    background-color: #715DF2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 3em;
+}
+
+.aboutInfo{
+    width: 50em;
+    line-height: 1.75em;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 1.25em;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 2s, transform 1s;
+    transform: translateY(5em);
+}
+
+.aboutInfo a{
+    color: white;
+    font-weight: bold;
+}
+
+.aboutTitle{
+    width: 20%;
+    text-align: center;
+    font-size: 1.25em;
+    transform: translateY(5em);
+    opacity: 0;
+    transition: opacity 2s, transform 1s;
+}
+
+.contact{
+    height: 10em;
+}
+
+.contactContainer{
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10em;
+}
+
+.contactContainer span{
+    font-size: 2em;
+    margin-bottom: 1em;
+    z-index: 1;
+}
+
+.contactForm{
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1;
+}
+
+.formGroup{
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.formGroup:last-of-type{
+    margin-top: 1.5em;
+}
+
+/* .contactForm input, textarea{
+    background-color: transparent;
+    border: none;
+} */
+
+label {
+    color: white; 
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    transform: translateY(3px);
+    opacity: 0.5;
+    transition: 0.2s ease;
+    top: 0px;
+    left: 5px;
+}
+
+input{
+    font-size: 16px;
+    height: 25px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #B1B1B1;
+    color: white;
+    background: rgba(0,0,0,0);
+    opacity: 0.6;
+    transition: 0.2s ease;
+}
+
+input:focus{
+    opacity: 1;
+}
+
+.formGroup input:focus ~ label,
+.formGroup input:not(:placeholder-shown) ~ label
+{
+    transform: translateY(-20px);
+    opacity: 1;
+}
+
+textarea{
+    font-size: 16px;
+    padding: 0px 5px 10px 5px;
+    width: 300px;
+    max-width: 300px;
+    /* border: none; */
+    outline: none;
+    border: 1px solid #B1B1B1;
+    border-radius: 3px;
+    color: white;
+    background: rgba(0,0,0,0);
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+    font-family: "Roboto", Times, serif;  
+}
+
+textarea:focus{
+    opacity: 1;
+}
+
+textarea ~ label{
+    top: -25px;
+    /* left: 50%;
+    transform: translateX(-50%); */
+}
+
+textarea:focus ~ label{
+    opacity: 1;
+}
