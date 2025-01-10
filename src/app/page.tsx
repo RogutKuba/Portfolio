@@ -1,7 +1,6 @@
 import { Experience } from '@/components/Experience';
 import { MyLinks } from '@/components/MyLinks';
 import { Projects } from '@/components/Projects';
-import { Travel } from '@/components/Travel';
 
 export default function Home() {
   return (
