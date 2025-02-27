@@ -65,7 +65,7 @@ export const Experience = () => {
         {PAST_JOBS.map((job) => (
           <a
             key={job.href}
-            className='flex items-center justify-between group'
+            className='flex flex-col sm:flex-row items-start sm:items-center justify-between group'
             href={job.href}
             target='_blank'
           >

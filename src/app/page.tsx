@@ -4,7 +4,7 @@ import { Projects } from '@/components/Projects';
 
 export default function Home() {
   return (
-    <div className='min-h-screen py-20 bg-white text-gray-800 font-[family-name:var(--font-geist-sans)]'>
+    <div className='min-h-screen py-20 px-4 bg-white text-gray-800 font-[family-name:var(--font-geist-sans)]'>
       <main className='max-w-3xl mx-auto space-y-12'>
         {/* Hero Section */}
         <div>

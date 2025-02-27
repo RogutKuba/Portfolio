@@ -7,7 +7,7 @@ const PROJECTS = [
   {
     href: 'https://sfxengine.com/',
     title: 'SFX Engine',
-    description: 'Create sound effects using AI. 2000+ users, $100 MRR',
+    description: 'Create sound effects using AI. 5000+ users',
   },
   {
     href: 'https://x.com/rogutkuba/status/1861210937149055350',
