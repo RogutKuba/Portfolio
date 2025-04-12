@@ -5,12 +5,19 @@ const PAST_JOBS: {
   title: string;
   date: string;
 }[] = [
+  // {
+  //   href: 'https://useultrance.com',
+  //   logo: 'ultrance.webp',
+  //   name: 'Ultrance',
+  //   title: 'Founder',
+  //   date: '2024 - Present',
+  // },
   {
-    href: 'https://useultrance.com',
-    logo: 'ultrance.webp',
-    name: 'Ultrance',
-    title: 'Founder',
-    date: '2024 - Present',
+    href: 'https://www.afore.vc',
+    logo: '/afore.jpeg',
+    name: 'Afore Capital',
+    title: 'Founder In Residence',
+    date: 'Feb 2025 - Apr 2025',
   },
   {
     href: 'https://joinslash.com',
