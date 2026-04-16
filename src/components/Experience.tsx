@@ -5,13 +5,13 @@ const PAST_JOBS: {
   title: string;
   date: string;
 }[] = [
-  // {
-  //   href: 'https://useultrance.com',
-  //   logo: 'ultrance.webp',
-  //   name: 'Ultrance',
-  //   title: 'Founder',
-  //   date: '2024 - Present',
-  // },
+  {
+    href: 'https://turbopuffer.com',
+    logo: '/turbopuffer.png',
+    name: 'turbopuffer',
+    title: 'Deployed Engineer',
+    date: 'Feb 2026 - Present',
+  },
   {
     href: 'https://www.afore.vc',
     logo: '/afore.jpeg',
